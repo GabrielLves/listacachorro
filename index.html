@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Cachorros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Cachorros 🐾</h1>
+        <button id="addDogBtn">Adicionar Cachorro</button>
+        <div class="table-container">
+            <table id="dogTable">
+                <thead>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Nome do Cachorro</th>
+                        <th>Dono(a)</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Adicionar Novo Cachorro</h2>
+            <form id="addDogForm">
+                <label for="dogName">Nome do Cachorro:</label>
+                <input type="text" id="dogName" required>
+
+                <label for="ownerName">Nome do Dono(a):</label>
+                <input type="text" id="ownerName" required>
+
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="imageURL">Imagem (URL):</label>
+                <input type="url" id="imageURL">
+
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
