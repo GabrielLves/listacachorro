@@ -79,7 +79,7 @@ function deleteDog(button) {
 }
 
 window.onload = function () {
-    fetch('https://run.mocky.io/v3/404a6d49-8763-45d3-9ff0-990f51fb2eed')
+    fetch('https://run.mocky.io/v3/9189caf3-293c-44e9-942f-03964dad1a53')
         .then(response => response.json())
         .then(data => {
             data.forEach(dog => {
